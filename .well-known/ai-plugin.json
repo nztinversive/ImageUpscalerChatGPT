@@ -1,1 +1,18 @@
-
+{
+  "schema_version": "v1",
+  "name_for_human": "Image Upscaler Plugin",
+  "name_for_model": "image_upscaler",
+  "description_for_human": "Plugin for upscaling images using a pre-trained AI model.",
+  "description_for_model": "Plugin for upscaling images using a pre-trained AI model.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://imageupscalerplugin.nztinversive.repl.co/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://imageupscalerplugin.nztinversive.repl.co/logo.png",
+  "contact_email": "support@yourdomain.com",
+  "legal_info_url": "https://yourdomain.com/legal"
+}
