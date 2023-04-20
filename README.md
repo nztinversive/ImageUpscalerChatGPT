@@ -15,8 +15,6 @@ Requests
 ## Installation
 1. Clone the repository:
 
-git clone https://github.com/yourusername/image-upscaler-plugin.git
-
 2. Change to the project directory:
 
 cd image-upscaler-plugin
