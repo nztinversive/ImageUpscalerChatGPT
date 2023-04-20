@@ -1,0 +1,40 @@
+openapi: 3.0.1
+info:
+  title: Image Upscaler Plugin
+  description: A plugin that allows users to upscale images using a pre-trained AI model.
+  version: 'v1'
+servers:
+  - url: https://imageupscalerplugin.nztinversive.repl.co
+paths:
+  /upscale:
+    post:
+      operationId: upscaleImage
+      summary: Upscale an image using a pre-trained AI model
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                image_url:
+                  type: string
+                  format: uri
+                scale:
+                  type: number
+                  default: 4
+                face_enhance:
+                  type: boolean
+                  default: false
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  output_url:
+                    type: string
+                    format: uri
+                    description: The URL of the upscaled image
